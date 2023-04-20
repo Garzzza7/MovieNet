@@ -1,5 +1,6 @@
 package com.example.movienet
-
+import com.bumptech.glide.annotation.GlideModule
+import com.bumptech.glide.module.AppGlideModule
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
