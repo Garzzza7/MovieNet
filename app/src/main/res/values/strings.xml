@@ -1,3 +1,13 @@
 <resources>
-    <string name="app_name">MovieNet</string>
+    <string name="chuj">Affirmations</string>
+    <string name="affirmation1">CHUJ</string>
+    <string name="affirmation2">CHUJ</string>
+    <string name="affirmation3">CHUJ</string>
+    <string name="affirmation4">CHUJ</string>
+    <string name="affirmation5">CHUJ</string>
+    <string name="affirmation6">CHUJ</string>
+    <string name="affirmation7">CHUJ</string>
+    <string name="affirmation8">CHUJ</string>
+    <string name="affirmation9">CHUJ</string>
+    <string name="affirmation10">CHUJ</string>
 </resources>
