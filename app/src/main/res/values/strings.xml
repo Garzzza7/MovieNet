@@ -10,4 +10,8 @@
     <string name="affirmation8">CHUJ</string>
     <string name="affirmation9">CHUJ</string>
     <string name="affirmation10">CHUJ</string>
+
+    <string name="app_name">RatingSystem</string>
+    <string name="add_your_comment_here">Add your comment here</string>
+    <string name="rate_the_movie_from_1_to_5">Rate the movie from 1 to 5</string>
 </resources>
