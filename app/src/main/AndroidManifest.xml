@@ -29,6 +29,14 @@
             android:name=".MyListViewModel"
             android:exported="true">
         </activity>
+        <activity
+            android:name=".RatingViewModel"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".ItemViewModel"
+            android:exported="true">
+        </activity>
     </application>
 
 </manifest>

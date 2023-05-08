@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <!-- Top navigation bar with left arrow button and check icon button -->
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:background="#8a1524">
+
+        <!-- Left arrow button -->
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_back_arrow"
+            android:contentDescription="Go Back"/>
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="My Little Pony"
+            android:textColor="@android:color/white"
+            android:textSize="21sp"/>
+
+        <!-- Check icon button -->
+        <ImageButton
+            android:id="@+id/check_button"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="10dp"
+            android:background="@null"
+            android:src="@drawable/ic_check"
+            android:contentDescription="Confirm"/>
+
+
+    </RelativeLayout>
+
+    <!-- Movie image -->
+    <ImageView
+        android:id="@+id/movie_image"
+        android:layout_width="match_parent"
+        android:layout_height="225dp"
+        android:layout_below="@id/top_bar"
+        android:scaleType="centerCrop"/>
+    <!--        android:src="@drawable/my_little_pony"-->
+
+    <TextView
+        android:id="@+id/movie_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_image"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/comment_box_border"
+        android:textSize="14sp"
+        android:padding="3dp"
+        android:textColor="@android:color/white"
+        android:text=" Director: Daron Aron Chomsky                            Release: 2019"/>
+
+<!--    &lt;!&ndash; Text "Your rating" &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/your_rating"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/movie_image"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="40dp"-->
+<!--        android:text="Your rating:"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textStyle="bold"/>-->
+
+<!--    &lt;!&ndash; Rating bar &ndash;&gt;-->
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/your_rating"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:layout_marginTop="8dp"-->
+<!--        android:contentDescription="@string/rate_the_movie_from_1_to_5"-->
+<!--        android:numStars="5"-->
+<!--        android:stepSize="1"-->
+<!--        android:rating="0"-->
+<!--        android:progressTint="@color/yellow"/>-->
+
+<!--    &lt;!&ndash; Comment box &ndash;&gt;-->
+<!--    <EditText-->
+<!--        android:id="@+id/comment_box"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ratingBar"-->
+<!--        android:layout_marginTop="25dp"-->
+<!--        android:background="@drawable/comment_box_border"-->
+<!--        android:hint="@string/add_your_comment_here"-->
+<!--        android:padding="12dp"-->
+<!--        android:textAlignment="center"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textColorHint="@android:color/darker_gray" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/comment_text"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/comment_box"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:textSize="18sp"-->
+<!--        android:textColor="@android:color/white"/>-->
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBarLeft1"-->
+<!--        android:contentDescription="Rate Acting"-->
+<!--        android:layout_width="242dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/comment_text"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:numStars="5"-->
+<!--        android:progressTint="@color/yellow"-->
+<!--        android:rating="0"-->
+<!--        android:scaleX="0.6"-->
+<!--        android:scaleY="0.6"-->
+<!--        android:stepSize="1" />-->
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBarRight1"-->
+<!--        android:contentDescription="Rate Directing"-->
+<!--        android:layout_width="245dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/comment_text"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginStart="155dp"-->
+<!--        android:layout_marginTop="35dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:numStars="5"-->
+<!--        android:progressTint="@color/yellow"-->
+<!--        android:rating="0"-->
+<!--        android:scaleX="0.6"-->
+<!--        android:scaleY="0.6"-->
+<!--        android:stepSize="1" />-->
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBarLeft2"-->
+<!--        android:contentDescription="Rate Cinematography"-->
+<!--        android:layout_width="242dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ratingBarLeft1"-->
+<!--        android:layout_alignParentStart="true"-->
+<!--        android:layout_centerVertical="true"-->
+<!--        android:layout_marginStart="0dp"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:numStars="5"-->
+<!--        android:progressTint="@color/yellow"-->
+<!--        android:rating="0"-->
+<!--        android:scaleX="0.6"-->
+<!--        android:scaleY="0.6"-->
+<!--        android:stepSize="1" />-->
+
+<!--    <RatingBar-->
+<!--        android:id="@+id/ratingBarRight2"-->
+<!--        android:contentDescription="Rate Screenplay"-->
+<!--        android:layout_width="245dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ratingBarRight1"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:layout_marginTop="30dp"-->
+<!--        android:layout_marginEnd="1dp"-->
+<!--        android:layout_marginStart="155dp"-->
+<!--        android:numStars="5"-->
+<!--        android:progressTint="@color/yellow"-->
+<!--        android:rating="0"-->
+<!--        android:scaleX="0.6"-->
+<!--        android:scaleY="0.6"-->
+<!--        android:stepSize="1" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/rating_label1"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/comment_text"-->
+<!--        android:layout_marginStart="105dp"-->
+<!--        android:layout_marginTop="18dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:text="Acting:"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="12sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/rating_label2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/comment_text"-->
+<!--        android:layout_marginStart="250dp"-->
+<!--        android:layout_marginTop="18dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:text="Directing:"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="12sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/rating_label3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ratingBarLeft1"-->
+<!--        android:layout_marginStart="75dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:text="Cinematography:"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="12sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/rating_label4"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ratingBarRight1"-->
+<!--        android:layout_marginStart="250dp"-->
+<!--        android:layout_marginTop="15dp"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:text="Screenplay:"-->
+<!--        android:textColor="@android:color/white"-->
+<!--        android:textSize="12sp" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/textView2"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/ratingBarLeft2"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="4dp"-->
+<!--        android:text="Rate:"-->
+<!--        android:textColor="@color/white" />-->
+</RelativeLayout>

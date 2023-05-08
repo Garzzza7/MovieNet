@@ -11,10 +11,45 @@
         android:id="@+id/textView"
         android:layout_width="413dp"
         android:layout_height="152dp"
-        android:background="#FF0000"
+        android:background="#8a1524"
         tools:layout_editor_absoluteX="-3dp"
         tools:layout_editor_absoluteY="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"  />
+    <TextView
+        android:id="@+id/FilmListID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="120dp"
+        android:text="Films"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/ExploreID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="172dp"
+        android:layout_marginTop="120dp"
+        android:text="Explore"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/MYListID"
+        android:layout_width="91dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="292dp"
+        android:layout_marginTop="120dp"
+        android:text="My List"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

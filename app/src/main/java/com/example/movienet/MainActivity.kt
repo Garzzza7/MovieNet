@@ -1,6 +1,7 @@
 package com.example.movienet
 import android.content.Context
 import android.content.Intent
+import android.graphics.BitmapFactory
 import android.media.Image
 import com.bumptech.glide.annotation.GlideModule
 import com.bumptech.glide.module.AppGlideModule
@@ -15,67 +16,6 @@ import android.widget.TextView
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.recyclerview.widget.RecyclerView
-
-//class ItemAdapter(
-//    private val context: Context,
-//    private val dataset: List<Affirmation>
-//): RecyclerView.Adapter<ItemAdapter.ItemViewHolder>() {
-//
-//    // Provide a reference to the views for each data item
-//    // Complex data items may need more than one view per item, and
-//    // you provide access to all the views for a data item in a view holder.
-//    // Each data item is just an Affirmation object.
-//    class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
-//        val textView: TextView = view.findViewById(R.id.item_title1)
-//        val imageView: ImageView = view.findViewById(R.id.item_image1)
-//    }
-//
-//    /**
-//     * Create new views (invoked by the layout manager)
-//     */
-//    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
-//        // create a new view
-//        val adapterLayout = LayoutInflater.from(parent.context)
-//            .inflate(R.layout.list_item, parent, false)
-//
-//        return ItemViewHolder(adapterLayout)
-//    }
-//
-//    /**
-//     * Replace the contents of a view (invoked by the layout manager)
-//     */
-//    override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
-//        val item = dataset[position]
-//        holder.textView.text = context.resources.getString(item.stringResourceId)
-//        holder.imageView.setImageResource(item.imageResourceId)
-//    }
-//
-//    /**
-//     * Return the size of your dataset (invoked by the layout manager)
-//     */
-//    override fun getItemCount() = dataset.size
-//}
-//class Datasource() {
-//
-//    fun loadAffirmations(): List<Affirmation> {
-//        return listOf<Affirmation>(
-//            Affirmation(R.string.affirmation1, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation2, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation3, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation4, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation5, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation6, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation7, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation8, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation9, R.drawable.placehorder),
-//            Affirmation(R.string.affirmation10, R.drawable.placehorder))
-//    }
-//}
-//
-//data class Affirmation(
-//    @StringRes val stringResourceId: Int,
-//    @DrawableRes val imageResourceId: Int
-//)
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -92,14 +32,19 @@ class MainActivity : AppCompatActivity() {
         var  ib8:ImageButton = findViewById(R.id.imageButton8);
         var  ib9:ImageButton = findViewById(R.id.imageButton9);
 
-        var films_textview:TextView=findViewById(R.id.FilmListID);
+        ib1.setImageResource(R.drawable.beyblade_metal_fury)
+        ib2.setImageResource(R.drawable.beyblade_metal_fusion)
+        ib3.setImageResource(R.drawable.beyblade_metal_masters)
+        ib4.setImageResource(R.drawable.cyberpunk_edging)
+        ib5.setImageResource(R.drawable.bleach)
+        ib6.setImageResource(R.drawable.evangelion)
+        ib7.setImageResource(R.drawable.guilty_crown)
+        ib8.setImageResource(R.drawable.kiznaiver)
+        ib9.setImageResource(R.drawable.naruto)
+
         var explore_textview:TextView=findViewById(R.id.ExploreID);
         var mylist_textview:TextView=findViewById(R.id.MYListID);
 
-        films_textview.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
         explore_textview.setOnClickListener {
             val intent = Intent(this, ExploreViewModel::class.java)
             startActivity(intent)
@@ -110,53 +55,49 @@ class MainActivity : AppCompatActivity() {
         }
 
         ib1.setOnClickListener{
-            val intent = Intent(this, ExploreViewModel::class.java)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","BMF")
             startActivity(intent)
         }
         ib2.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","BMM")
+            startActivity(intent)
         }
         ib3.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","BMFU")
+            startActivity(intent)
         }
         ib4.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","CP")
+            startActivity(intent)
         }
         ib5.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","BL")
+            startActivity(intent)
         }
         ib6.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","EVA")
+            startActivity(intent)
         }
         ib7.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","GC")
+            startActivity(intent)
         }
         ib8.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","KIZ")
+            startActivity(intent)
         }
         ib9.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ItemViewModel::class.java)
+            intent.putExtra("ID","NAR")
+            startActivity(intent)
         }
-
-
-
-
-//        // Initialize data.
-//        val myDataset = Datasource().loadAffirmations()
-//
-//        val recyclerView = findViewById<RecyclerView>(R.id.recycler_view)
-//        recyclerView.adapter = ItemAdapter(this, myDataset)
-//
-//        // Use this setting to improve performance if you know that changes
-//        // in content do not change the layout size of the RecyclerView
-//        recyclerView.setHasFixedSize(true)
     }
 }

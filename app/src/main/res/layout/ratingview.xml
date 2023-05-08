@@ -46,6 +46,7 @@
             android:src="@drawable/ic_check"
             android:contentDescription="Confirm"/>
 
+
     </RelativeLayout>
 
     <!-- Movie image -->
@@ -54,8 +55,8 @@
         android:layout_width="match_parent"
         android:layout_height="225dp"
         android:layout_below="@id/top_bar"
-        android:scaleType="centerCrop"
-        android:src="@drawable/my_little_pony"/>
+        android:scaleType="centerCrop"/>
+<!--        android:src="@drawable/my_little_pony"-->
 
     <TextView
         android:id="@+id/movie_info"

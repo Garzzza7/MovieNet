@@ -185,7 +185,9 @@
         android:layout_marginTop="568dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton8"
@@ -195,7 +197,9 @@
         android:layout_marginTop="568dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton2"
@@ -205,7 +209,9 @@
         android:layout_marginTop="152dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton3"
@@ -215,7 +221,9 @@
         android:layout_marginTop="152dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton1"
@@ -224,7 +232,9 @@
         android:layout_marginTop="152dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton4"
@@ -233,7 +243,9 @@
         android:layout_marginTop="360dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton5"
@@ -243,7 +255,9 @@
         android:layout_marginTop="360dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton6"
@@ -253,7 +267,9 @@
         android:layout_marginTop="360dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <ImageButton
         android:id="@+id/imageButton7"
@@ -262,17 +278,19 @@
         android:layout_marginTop="568dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder" />
+        app:srcCompat="@drawable/placehorder"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"/>
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="413dp"
         android:layout_height="152dp"
-        android:background="#FF0000"
+        android:background="#8a1524"
         tools:layout_editor_absoluteX="-3dp"
         tools:layout_editor_absoluteY="0dp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"  />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/FilmListID"
