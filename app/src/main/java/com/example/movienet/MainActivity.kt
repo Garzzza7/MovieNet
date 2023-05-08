@@ -110,8 +110,8 @@ class MainActivity : AppCompatActivity() {
         }
 
         ib1.setOnClickListener{
-//            val intent = Intent(this, GyroscopeViewModel::class.java)
-//            startActivity(intent)
+            val intent = Intent(this, ExploreViewModel::class.java)
+            startActivity(intent)
         }
         ib2.setOnClickListener{
 //            val intent = Intent(this, GyroscopeViewModel::class.java)
