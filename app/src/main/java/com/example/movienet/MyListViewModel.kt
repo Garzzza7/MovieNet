@@ -7,7 +7,11 @@ import android.widget.ImageButton
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
+
 class MyListViewModel: AppCompatActivity() {
+
+    var repository = MovieDao()
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mylist_layout)
@@ -32,25 +36,39 @@ class MyListViewModel: AppCompatActivity() {
             val intent = Intent(this, ExploreViewModel::class.java)
             startActivity(intent)
         }
-
-
+        var intent:Intent=getIntent()
+        var bundle: Bundle? =intent.extras
+        var profileName = bundle?.getString("Key")
+        var profileScore = bundle?.getFloat("Rating")
+        if (profileName != null) {
+            if (profileScore != null) {
+                repository.update(profileName,profileScore)
+            }
+        }
 
         ib1.setOnClickListener{
             val intent = Intent(this, RatingViewModel::class.java)
-            intent.putExtra("MovieID","geas")
+            var bundle = Bundle()
+            bundle.putString("MovieID","geas")
+            repository.get_value("geas")?.let { it1 -> bundle.putFloat("Stars", it1) }
+            intent.putExtras(bundle)
             startActivity(intent)
         }
         ib2.setOnClickListener{
             val intent = Intent(this, RatingViewModel::class.java)
-            intent.putExtra("MovieID","jojo1")
+            var bundle = Bundle()
+            bundle.putString("MovieID","jojo1")
+            repository.get_value("jojo1")?.let { it1 -> bundle.putFloat("Stars", it1) }
+            intent.putExtras(bundle)
             startActivity(intent)
         }
         ib3.setOnClickListener{
             val intent = Intent(this, RatingViewModel::class.java)
-            intent.putExtra("MovieID","jojo5")
+            var bundle = Bundle()
+            bundle.putString("MovieID","jojo5")
+            repository.get_value("jojo5")?.let { it1 -> bundle.putFloat("Stars", it1) }
+            intent.putExtras(bundle)
             startActivity(intent)
         }
-
-
     }
 }
