@@ -27,12 +27,24 @@ class RatingViewModel: AppCompatActivity() {
         if(profileName=="geas") {
             var im: ImageView = findViewById(R.id.movie_image)
             im.setImageResource(R.drawable.geas)
+            var movie_info: TextView =findViewById(R.id.movie_info)
+            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            var title: TextView = findViewById(R.id.title)
+            title.text = "Geas"
         }else if(profileName=="jojo1"){
             var im: ImageView = findViewById(R.id.movie_image)
             im.setImageResource(R.drawable.jojo)
+            var movie_info: TextView =findViewById(R.id.movie_info)
+            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            var title: TextView = findViewById(R.id.title)
+            title.text = "JoJo"
         }else if(profileName=="jojo5"){
             var im: ImageView = findViewById(R.id.movie_image)
             im.setImageResource(R.drawable.jojovento)
+            var movie_info: TextView =findViewById(R.id.movie_info)
+            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            var title: TextView = findViewById(R.id.title)
+            title.text = "Jojo Vento"
         }else{
 
         }

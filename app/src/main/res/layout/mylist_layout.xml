@@ -23,7 +23,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="120dp"
         android:text="Films"
-        android:textColor="@drawable/text_selector"
+
         android:focusable="true"
         android:clickable="true"
         android:textSize="20sp"
@@ -37,7 +37,7 @@
         android:layout_marginStart="172dp"
         android:layout_marginTop="120dp"
         android:text="Explore"
-        android:textColor="@drawable/text_selector"
+
         android:focusable="true"
         android:clickable="true"
         android:textSize="20sp"
@@ -51,7 +51,7 @@
         android:layout_marginStart="292dp"
         android:layout_marginTop="120dp"
         android:text="My List"
-        android:textColor="@drawable/text_selector"
+
         android:focusable="true"
         android:clickable="true"
         android:textSize="20sp"
