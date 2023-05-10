@@ -16,6 +16,20 @@
         tools:layout_editor_absoluteY="0dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"  />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="43dp"
+        android:layout_height="46dp"
+        android:src="@drawable/baseline_menu_24"
+
+        app:layout_constraintBottom_toTopOf="@+id/FilmListID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.15"
+        app:tint="@color/white" />
     <TextView
         android:id="@+id/FilmListID"
         android:layout_width="wrap_content"
@@ -23,6 +37,7 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="120dp"
         android:text="Films"
+        android:textColor="@color/white"
 
         android:focusable="true"
         android:clickable="true"
@@ -37,6 +52,7 @@
         android:layout_marginStart="172dp"
         android:layout_marginTop="120dp"
         android:text="Explore"
+        android:textColor="@color/white"
 
         android:focusable="true"
         android:clickable="true"
@@ -51,6 +67,7 @@
         android:layout_marginStart="292dp"
         android:layout_marginTop="120dp"
         android:text="My List"
+        android:textColor="@color/white"
 
         android:focusable="true"
         android:clickable="true"
