@@ -6,7 +6,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/black"
     android:visibility="visible"
-    tools:context=".ExploreViewModel">
+    tools:context=".MyListViewModel">
     <TextView
         android:id="@+id/textView"
         android:layout_width="413dp"
@@ -22,7 +22,6 @@
         android:layout_width="43dp"
         android:layout_height="46dp"
         android:src="@drawable/baseline_menu_24"
-
         app:layout_constraintBottom_toTopOf="@+id/FilmListID"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
@@ -30,6 +29,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.15"
         app:tint="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviews"
+        android:textColor="@color/white"
+        android:textSize="40dp"
+        app:layout_constraintBottom_toTopOf="@+id/ExploreID"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.061"
+        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintTop_toTopOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.134" />
+
     <TextView
         android:id="@+id/FilmListID"
         android:layout_width="wrap_content"
@@ -62,17 +75,92 @@
 
     <TextView
         android:id="@+id/MYListID"
-        android:layout_width="91dp"
-        android:layout_height="36dp"
-        android:layout_marginStart="292dp"
-        android:layout_marginTop="120dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="304dp"
+        android:layout_marginTop="116dp"
+        android:clickable="true"
+        android:focusable="true"
+
         android:text="My List"
         android:textColor="@color/white"
-
-        android:focusable="true"
-        android:clickable="true"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/Date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 March"
+        android:textSize="18dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@id/textView"/>
+
+    <TextView
+        android:id="@+id/UserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviewed by: Finny Ster"
+        android:textSize="18dp"
+        android:textColor="@color/white"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@id/Date"/>
+
+    <ImageButton
+        android:id="@+id/imageButton1"
+        android:layout_width="138dp"
+        android:layout_height="209dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.015"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/UserName"
+        app:srcCompat="@drawable/placehorder" />
+
+    <TextView
+        android:id="@+id/Date2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="5 January"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@id/imageButton1" />
+
+    <TextView
+        android:id="@+id/UserName2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reviewed by: James Cameron"
+        android:textColor="@color/white"
+        android:textSize="18dp"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton1"
+        app:layout_constraintTop_toBottomOf="@id/Date2" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="138dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toBottomOf="@id/UserName2"
+        app:layout_constraintLeft_toLeftOf="@id/imageButton1"
+        app:srcCompat="@drawable/placehorder"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton3"
+        android:layout_width="138dp"
+        android:layout_height="209dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toRightOf="@id/imageButton2"
+        app:layout_constraintTop_toBottomOf="@id/UserName2"
+        app:srcCompat="@drawable/placehorder" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
