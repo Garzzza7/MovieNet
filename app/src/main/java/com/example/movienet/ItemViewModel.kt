@@ -93,6 +93,7 @@ class ItemViewModel : AppCompatActivity(){
         }
         add_button.setOnClickListener {
             val intent = Intent(this, MyListViewModel::class.java)
+            intent.putExtra("Anime_Name",profileName);
             startActivity(intent)
         }
     }

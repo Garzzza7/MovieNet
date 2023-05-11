@@ -14,6 +14,7 @@ class MyListViewModel: AppCompatActivity() {
 
     var repository = MovieDao()
 
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.mylist_layout)
@@ -21,6 +22,7 @@ class MyListViewModel: AppCompatActivity() {
         var ib1: ImageButton = findViewById(R.id.imageButton1);
         var ib2: ImageButton = findViewById(R.id.imageButton2);
         var ib3: ImageButton = findViewById(R.id.imageButton3);
+        var new_image: ImageButton = findViewById(R.id.new_Image);
         ib1.setImageResource(R.drawable.geas)
         ib2.setImageResource(R.drawable.jojo)
         ib3.setImageResource(R.drawable.jojovento)
@@ -49,6 +51,57 @@ class MyListViewModel: AppCompatActivity() {
             val intent = Intent(this, MenuViewModel::class.java)
             startActivity(intent)
         }
+
+
+        var i: Intent = intent
+        var b: Bundle? = intent.extras
+        var anime_name = b?.getString("Anime_Name")
+        if(anime_name=="BMF"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.beyblade_metal_fusion)
+
+        }
+        else if(anime_name=="BMM"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.beyblade_metal_masters)
+
+        }
+        else if(anime_name=="BMFU"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.beyblade_metal_fury)
+
+        }
+        else if(anime_name=="CP"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.cyberpunk_edging)
+
+        }
+        else if(anime_name=="BL"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.bleach)
+
+        }
+        else if(anime_name=="EVA"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.evangelion)
+
+        }
+        else if(anime_name=="GC"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.guilty_crown)
+
+        }
+        else if(anime_name=="KIZ"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.kiznaiver)
+
+        }
+        else if(anime_name=="NAR"){
+            var im: ImageView = findViewById(R.id.new_Image)
+            im.setImageResource(R.drawable.naruto)
+
+        }
+
 
         var intent: Intent = getIntent()
         var bundle: Bundle? = intent.extras
@@ -82,6 +135,11 @@ class MyListViewModel: AppCompatActivity() {
             bundle.putString("MovieID", "jojo5")
             repository.get_value("jojo5")?.let { it1 -> bundle.putFloat("Stars", it1) }
             intent.putExtras(bundle)
+            startActivity(intent)
+        }
+        new_image.setOnClickListener{
+            val intent = Intent(this, RatingViewModel::class.java)
+            intent.putExtra("Anime_Name", anime_name)
             startActivity(intent)
         }
     }

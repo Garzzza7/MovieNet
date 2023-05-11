@@ -22,12 +22,8 @@
         android:layout_width="43dp"
         android:layout_height="46dp"
         android:src="@drawable/ic_menu"
-        app:layout_constraintBottom_toTopOf="@+id/imageButton1"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.15"
         app:tint="@color/white" />
 
     <TextView
@@ -87,28 +83,42 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
+        android:id="@+id/new_Image"
+        android:layout_width="138dp"
+        android:layout_height="209dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="152dp"
+        android:adjustViewBounds="true"
+        android:background="@color/black"
+        android:scaleType="centerCrop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@color/black" />
+
+    <ImageButton
         android:id="@+id/imageButton1"
         android:layout_width="138dp"
         android:layout_height="209dp"
-        android:layout_marginTop="152dp"
         android:layout_marginStart="4dp"
+        android:layout_marginTop="152dp"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/placehorder"
-        android:adjustViewBounds="true"
-        android:scaleType="centerCrop"/>
+        app:srcCompat="@drawable/placehorder" />
 
     <ImageButton
         android:id="@+id/imageButton2"
         android:layout_width="138dp"
         android:layout_height="209dp"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="360dp"
+        android:layout_marginTop="356dp"
         android:adjustViewBounds="true"
         android:scaleType="centerCrop"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/placehorder" />
+
     <TextView
         android:id="@+id/films_indicator"
         android:layout_width="40dp"
