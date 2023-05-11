@@ -37,10 +37,10 @@
             android:name=".ItemViewModel"
             android:exported="true">
         </activity>
-
         <activity
             android:name=".RatingFromReviewViewModel"
-
+            android:exported="true">
+        </activity>
         <activity android:name=".MenuViewModel"
             android:exported="true">
         </activity>

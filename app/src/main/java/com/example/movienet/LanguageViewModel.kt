@@ -13,10 +13,25 @@ class LanguageViewModel : AppCompatActivity() {
         setContentView(R.layout.language_layout)
 
         // to do languages
+        var polish_view : TextView = findViewById(R.id.PolishID)
+        var english_view : TextView = findViewById(R.id.EnglishID)
+        var portuguese_view : TextView = findViewById(R.id.PortugueseID)
         var back_button: ImageButton = findViewById(R.id.back_button)
 
         back_button.setOnClickListener {
             val intent = Intent(this, SettingsViewModel::class.java)
+            startActivity(intent)
+        }
+        polish_view.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        english_view.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+        portuguese_view.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
     }
