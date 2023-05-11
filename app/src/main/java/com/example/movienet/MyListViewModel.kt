@@ -25,6 +25,13 @@ class MyListViewModel: AppCompatActivity() {
         ib2.setImageResource(R.drawable.jojo)
         ib3.setImageResource(R.drawable.jojovento)
 
+        var films_indicator:TextView=findViewById(R.id.films_indicator);
+        var explore_indicator:TextView=findViewById(R.id.explore_indicator);
+        var mylist_indicator:TextView=findViewById(R.id.mylist_indicator);
+
+        films_indicator.setBackgroundColor(getColor(R.color.red));
+        explore_indicator.setBackgroundColor(getColor(R.color.red));
+        mylist_indicator.setBackgroundColor(getColor(R.color.white));
 
         var films_textview: TextView = findViewById(R.id.FilmListID);
         var explore_textview: TextView = findViewById(R.id.ExploreID);

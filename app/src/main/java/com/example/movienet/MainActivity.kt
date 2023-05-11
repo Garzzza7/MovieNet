@@ -1,4 +1,5 @@
 package com.example.movienet
+import android.annotation.SuppressLint
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -7,6 +8,7 @@ import android.widget.ImageView
 import android.widget.TextView
 
 class MainActivity : AppCompatActivity() {
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -36,8 +38,17 @@ class MainActivity : AppCompatActivity() {
         var mylist_textview:TextView=findViewById(R.id.MYListID);
         var menu_imageview:ImageView=findViewById(R.id.MenuID);
 
+        var films_indicator:TextView=findViewById(R.id.films_indicator);
+        var explore_indicator:TextView=findViewById(R.id.explore_indicator);
+        var mylist_indicator:TextView=findViewById(R.id.mylist_indicator);
+
+        films_indicator.setBackgroundColor(getColor(R.color.white));
+        explore_indicator.setBackgroundColor(getColor(R.color.red));
+        mylist_indicator.setBackgroundColor(getColor(R.color.red));
+
         explore_textview.setOnClickListener {
             val intent = Intent(this, ExploreViewModel::class.java)
+
             startActivity(intent)
         }
         mylist_textview.setOnClickListener {

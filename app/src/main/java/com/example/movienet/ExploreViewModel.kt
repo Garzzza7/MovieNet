@@ -27,6 +27,15 @@ class ExploreViewModel: AppCompatActivity() {
 
         var menu_imageview:ImageView=findViewById(R.id.MenuID);
 
+        var films_indicator:TextView=findViewById(R.id.films_indicator);
+        var explore_indicator:TextView=findViewById(R.id.explore_indicator);
+        var mylist_indicator:TextView=findViewById(R.id.mylist_indicator);
+
+        films_indicator.setBackgroundColor(getColor(R.color.red));
+        explore_indicator.setBackgroundColor(getColor(R.color.white));
+        mylist_indicator.setBackgroundColor(getColor(R.color.red));
+
+
         films_textview.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)

@@ -109,6 +109,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/placehorder" />
+    <TextView
+        android:id="@+id/films_indicator"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="144dp"
+        android:background="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explore_indicator"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="144dp"
+        android:background="#8a1524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mylist_indicator"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="144dp"
+        android:background="#8a1524"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageButton
         android:id="@+id/imageButton3"

@@ -291,6 +291,36 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <TextView
+        android:id="@+id/films_indicator"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="144dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/explore_indicator"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="184dp"
+        android:layout_marginTop="144dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/mylist_indicator"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:layout_marginStart="324dp"
+        android:layout_marginTop="144dp"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <ImageView
         android:id="@+id/MenuID"
         android:layout_width="43dp"
@@ -340,11 +370,11 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
         android:layout_marginTop="120dp"
+        android:clickable="true"
+        android:focusable="true"
+
         android:text="Explore"
         android:textColor="@color/white"
-
-        android:focusable="true"
-        android:clickable="true"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
