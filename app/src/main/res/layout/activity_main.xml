@@ -177,6 +177,7 @@
     <!--        app:layoutManager="LinearLayoutManager"-->
     <!--        android:scrollbars="vertical"/>-->
 
+
     <ImageButton
         android:id="@+id/imageButton9"
         android:layout_width="138dp"
@@ -294,7 +295,7 @@
         android:id="@+id/imageView"
         android:layout_width="43dp"
         android:layout_height="46dp"
-        android:src="@drawable/baseline_menu_24"
+        android:src="@drawable/ic_menu"
         app:layout_constraintBottom_toTopOf="@+id/imageButton1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.043"
@@ -306,15 +307,17 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="144dp"
         android:text="Popular"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/imageButton2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.065"
+        app:layout_constraintHorizontal_bias="0.314"
         app:layout_constraintStart_toEndOf="@+id/imageView"
         app:layout_constraintTop_toTopOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.09" />
+        app:layout_constraintVertical_bias="0.09"
+        tools:ignore="UnknownIdInLayout" />
 
     <TextView
         android:id="@+id/FilmListID"
