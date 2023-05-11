@@ -25,6 +25,8 @@ class ExploreViewModel: AppCompatActivity() {
         var films_textview:TextView=findViewById(R.id.FilmListID);
         var mylist_textview:TextView=findViewById(R.id.MYListID);
 
+        var menu_imageview:ImageView=findViewById(R.id.MenuID);
+
         films_textview.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
@@ -68,6 +70,9 @@ class ExploreViewModel: AppCompatActivity() {
             intent.putExtras(bundle)
             startActivity(intent)
         }
-
+        menu_imageview.setOnClickListener{
+            val intent = Intent(this, MenuViewModel::class.java)
+            startActivity(intent)
+        }
     }
 }

@@ -1,22 +1,10 @@
 package com.example.movienet
-import android.content.Context
 import android.content.Intent
-import android.graphics.BitmapFactory
-import android.graphics.Color
-import android.media.Image
-import com.bumptech.glide.annotation.GlideModule
-import com.bumptech.glide.module.AppGlideModule
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
-import androidx.recyclerview.widget.RecyclerView
 
 class MainActivity : AppCompatActivity() {
 
@@ -46,6 +34,7 @@ class MainActivity : AppCompatActivity() {
 
         var explore_textview:TextView=findViewById(R.id.ExploreID);
         var mylist_textview:TextView=findViewById(R.id.MYListID);
+        var menu_imageview:ImageView=findViewById(R.id.MenuID);
 
         explore_textview.setOnClickListener {
             val intent = Intent(this, ExploreViewModel::class.java)
@@ -53,6 +42,11 @@ class MainActivity : AppCompatActivity() {
         }
         mylist_textview.setOnClickListener {
             val intent = Intent(this, MyListViewModel::class.java)
+            startActivity(intent)
+        }
+
+        menu_imageview.setOnClickListener{
+            val intent = Intent(this, MenuViewModel::class.java)
             startActivity(intent)
         }
 

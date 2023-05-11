@@ -5,6 +5,7 @@ import android.content.Intent
 import android.graphics.Color
 import android.os.Bundle
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
@@ -27,6 +28,7 @@ class MyListViewModel: AppCompatActivity() {
 
         var films_textview: TextView = findViewById(R.id.FilmListID);
         var explore_textview: TextView = findViewById(R.id.ExploreID);
+        var menu_imageview: ImageView =findViewById(R.id.MenuID);
 
         films_textview.setOnClickListener {
             val intent = Intent(this, MainActivity::class.java)
@@ -34,6 +36,10 @@ class MyListViewModel: AppCompatActivity() {
         }
         explore_textview.setOnClickListener {
             val intent = Intent(this, ExploreViewModel::class.java)
+            startActivity(intent)
+        }
+        menu_imageview.setOnClickListener{
+            val intent = Intent(this, MenuViewModel::class.java)
             startActivity(intent)
         }
 

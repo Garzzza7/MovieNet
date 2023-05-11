@@ -37,8 +37,17 @@
             android:name=".ItemViewModel"
             android:exported="true">
         </activity>
+
         <activity
             android:name=".RatingFromReviewViewModel"
+
+        <activity android:name=".MenuViewModel"
+            android:exported="true">
+        </activity>
+        <activity android:name=".SettingsViewModel"
+            android:exported="true">
+        </activity>
+        <activity android:name=".LanguageViewModel"
             android:exported="true">
         </activity>
     </application>

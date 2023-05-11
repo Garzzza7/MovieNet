@@ -18,7 +18,7 @@
         app:layout_constraintTop_toTopOf="parent"  />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/MenuID"
         android:layout_width="43dp"
         android:layout_height="46dp"
         android:src="@drawable/ic_menu"
@@ -33,13 +33,14 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
         android:text="Watched"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/ExploreID"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.071"
-        app:layout_constraintStart_toEndOf="@+id/imageView"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toEndOf="@+id/MenuID"
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:layout_constraintVertical_bias="0.134" />
 
@@ -65,7 +66,6 @@
         android:layout_marginTop="120dp"
         android:text="Explore"
         android:textColor="@color/white"
-
         android:focusable="true"
         android:clickable="true"
         android:textSize="20sp"
