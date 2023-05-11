@@ -13,11 +13,11 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/LanguageID"
+        android:id="@+id/PortugueseID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="460dp"
-        android:text="Language"
+        android:text="Portuguese"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -26,11 +26,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/PrivacyID"
+        android:id="@+id/PolishID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="380dp"
-        android:text="Privacy"
+        android:text="English"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -39,11 +39,11 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/ProfileID"
+        android:id="@+id/EnglishID"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="300dp"
-        android:text="Profile"
+        android:text="Polish"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toBottomOf="parent"
