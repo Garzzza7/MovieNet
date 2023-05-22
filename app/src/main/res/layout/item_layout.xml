@@ -13,18 +13,19 @@
         android:background="#8a1524">
 
         <!-- Left arrow button -->
+
+        <!-- Title -->
+
         <ImageButton
             android:id="@+id/back_button"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_alignParentStart="true"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="-9dp"
             android:background="@null"
-            android:src="@drawable/ic_back_arrow"
-            android:contentDescription="Go Back"/>
+            android:contentDescription="Go Back"
+            android:src="@drawable/ic_back_arrow" />
 
-        <!-- Title -->
         <TextView
             android:id="@+id/title"
             android:layout_width="wrap_content"
@@ -33,18 +34,6 @@
             android:text="My Little Pony"
             android:textColor="@android:color/white"
             android:textSize="21sp"/>
-
-        <!-- Check icon button -->
-        <ImageButton
-            android:id="@+id/check_button"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
-            android:layout_alignParentEnd="true"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"
-            android:background="@null"
-            android:src="@drawable/ic_check"
-            android:contentDescription="Confirm"/>
 
 
     </RelativeLayout>
@@ -68,6 +57,44 @@
         android:textSize="14sp"
         android:padding="3dp"
         android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/general_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/movie_info"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:text="General Score:"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:textStyle="bold"/>
+
+    <!-- Rating bar -->
+    <RatingBar
+        android:id="@+id/ScoreBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/general_rating"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/rate_the_movie_from_1_to_5"
+        android:numStars="5"
+        android:stepSize="1"
+        android:isIndicator="true"
+        android:progressTint="@color/yellow"/>
+
+    <TextView
+        android:id="@+id/movie_info_expanded"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ScoreBar"
+        android:layout_marginTop="6dp"
+        android:textSize="24sp"
+        android:textAlignment="center"
+        android:padding="4dp"
+        android:background="#5E0D17"
+        android:textColor="@color/white"/>
 
     <Button
         android:id="@+id/add_button"

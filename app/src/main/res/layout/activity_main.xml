@@ -373,7 +373,7 @@
         android:clickable="true"
         android:focusable="true"
 
-        android:text="Explore"
+        android:text="Reviews"
         android:textColor="@color/white"
         android:textSize="20sp"
         app:layout_constraintStart_toStartOf="parent"

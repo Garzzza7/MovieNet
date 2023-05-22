@@ -64,7 +64,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
         android:layout_marginTop="120dp"
-        android:text="Explore"
+        android:text="Reviews"
         android:textColor="@color/white"
         android:focusable="true"
         android:clickable="true"

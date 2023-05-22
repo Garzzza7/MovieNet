@@ -3,6 +3,7 @@ package com.example.movienet
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
@@ -13,6 +14,7 @@ class RatingViewModel: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ratingview)
         var back_button:ImageView = findViewById(R.id.back_button)
+        var check_button:ImageView = findViewById(R.id.check_button)
 
         var bar:RatingBar=findViewById(R.id.ratingBar)
 
@@ -134,6 +136,14 @@ class RatingViewModel: AppCompatActivity() {
 
         }
         back_button.setOnClickListener {
+            val intent1 = Intent(this, MyListViewModel::class.java)
+//            var bundle1 = Bundle()
+//            bundle1.putString("Key",profileName)
+//            bundle1.putFloat("Rating",bar.rating)
+//            intent1.putExtras(bundle1)
+            startActivity(intent1)
+        }
+        check_button.setOnClickListener{
             val intent1 = Intent(this, MyListViewModel::class.java)
             var bundle1 = Bundle()
             bundle1.putString("Key",profileName)
