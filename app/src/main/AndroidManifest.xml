@@ -50,6 +50,10 @@
         <activity android:name=".LanguageViewModel"
             android:exported="true">
         </activity>
+        <activity android:name=".ProfileViewModel"
+            android:exported="true">
+
+        </activity>
     </application>
 
 </manifest>
