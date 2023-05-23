@@ -1,6 +1,5 @@
 package com.example.movienet
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageButton
@@ -15,7 +14,7 @@ class ExploreViewModel: AppCompatActivity() {
     var reviewRepository = MovieDao()
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.explore_layout)
+        setContentView(R.layout.reviews_layout)
 
         var ib1: ImageButton = findViewById(R.id.imageButton1);
         var ib2: ImageButton = findViewById(R.id.imageButton2);
