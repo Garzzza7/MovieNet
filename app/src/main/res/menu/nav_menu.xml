@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:showIn="navigation_view">
+
+    <item
+        android:id="@+id/SettingsID"
+        android:drawable="@drawable/baseline_settings_24"
+        android:title="Settings"
+        app:actionLayout="@layout/menu_layout"
+         />
+
+    <item
+        android:id="@+id/LogOutID"
+        android:drawable="@drawable/baseline_logout_24"
+        android:title="Log Out"
+        app:actionLayout="@layout/menu_layout"
+        />
+
+</menu>
+
+
+
