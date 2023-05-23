@@ -38,7 +38,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Reviews"
+        android:text="Friends' activity"
         android:textColor="@color/white"
         android:textSize="40dp"
         app:layout_constraintBottom_toTopOf="@+id/ExploreID"
@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="172dp"
         android:layout_marginTop="120dp"
-        android:text="Explore"
+        android:text="Reviews"
         android:textColor="@color/white"
 
         android:focusable="true"

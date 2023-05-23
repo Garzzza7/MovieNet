@@ -3,6 +3,7 @@ package com.example.movienet
 import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
+import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.RatingBar
 import android.widget.TextView
@@ -13,6 +14,7 @@ class RatingViewModel: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.ratingview)
         var back_button:ImageView = findViewById(R.id.back_button)
+        var check_button:ImageView = findViewById(R.id.check_button)
 
         var bar:RatingBar=findViewById(R.id.ratingBar)
 
@@ -29,77 +31,77 @@ class RatingViewModel: AppCompatActivity() {
             bar.rating=profileScore
         }
 
-        if(anime_name=="BMF"){
+        if(anime_name=="guardians"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.beyblade_metal_fusion)
+            im.setImageResource(R.drawable.guardians)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: James Gunn                                          Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Beyblade Metal Fusion"
+            title.text = "Guardians of the Galaxy Vol. 3"
         }
-        else if(anime_name=="BMM"){
+        else if(anime_name=="john"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.beyblade_metal_masters)
+            im.setImageResource(R.drawable.john)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Chad Stahelski                                      Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Beyblade Metal Masters"
+            title.text = "John Wick: Chapter 4"
         }
-        else if(anime_name=="BMFU"){
+        else if(anime_name=="barbie"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.beyblade_metal_fury)
+            im.setImageResource(R.drawable.barbie)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Greta Gerwig                                        Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Beyblade Metal Fury"
+            title.text = "Barbie"
         }
-        else if(anime_name=="CP"){
+        else if(anime_name=="mario"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.cyberpunk_edging)
+            im.setImageResource(R.drawable.mario)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Aaron Horvath                                       Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Cyberpunk: Edgerunners"
+            title.text = "Super Mario Bros: Film"
         }
-        else if(anime_name=="BL"){
+        else if(anime_name=="fastx"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.bleach)
+            im.setImageResource(R.drawable.fastx)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Louis Leterrier                                     Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Bleach"
+            title.text = "Fast X"
         }
-        else if(anime_name=="EVA"){
+        else if(anime_name=="asterix"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.evangelion)
+            im.setImageResource(R.drawable.asterix)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Guillaume Canet                                     Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Evangelion"
+            title.text = "Asterix & Obelix: The Middle Empire"
         }
-        else if(anime_name=="GC"){
+        else if(anime_name=="spiderman"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.guilty_crown)
+            im.setImageResource(R.drawable.spiderman)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Joaquim Dos Santos                                  Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Guilty Crown"
+            title.text = "Spider-Man: Across the Spider-Verse"
         }
-        else if(anime_name=="KIZ"){
+        else if(anime_name=="scream"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.kiznaiver)
+            im.setImageResource(R.drawable.scream)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Matt Bettinelli-Olpin                               Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Kiznaiver"
+            title.text = "Scream VI"
         }
-        else if(anime_name=="NAR"){
+        else if(anime_name=="syrenka"){
             var im: ImageView = findViewById(R.id.movie_image)
-            im.setImageResource(R.drawable.naruto)
+            im.setImageResource(R.drawable.syrenka)
             var movie_info: TextView =findViewById(R.id.movie_info)
-            movie_info.text = " Director: XYZ                                                         Release: 2137"
+            movie_info.text = " Director: Rob Marshall                                        Release: 2023"
             var title: TextView = findViewById(R.id.title)
-            title.text = "Naruto"
+            title.text = "The Little Mermaid"
         }
 
 
@@ -134,6 +136,14 @@ class RatingViewModel: AppCompatActivity() {
 
         }
         back_button.setOnClickListener {
+            val intent1 = Intent(this, MyListViewModel::class.java)
+//            var bundle1 = Bundle()
+//            bundle1.putString("Key",profileName)
+//            bundle1.putFloat("Rating",bar.rating)
+//            intent1.putExtras(bundle1)
+            startActivity(intent1)
+        }
+        check_button.setOnClickListener{
             val intent1 = Intent(this, MyListViewModel::class.java)
             var bundle1 = Bundle()
             bundle1.putString("Key",profileName)
