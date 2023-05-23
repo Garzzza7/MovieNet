@@ -6,6 +6,8 @@ import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class ExploreViewModel: AppCompatActivity() {
 
@@ -30,6 +32,9 @@ class ExploreViewModel: AppCompatActivity() {
         var explore_indicator:TextView=findViewById(R.id.explore_indicator);
         var mylist_indicator:TextView=findViewById(R.id.mylist_indicator);
 
+        var drawer_layout: DrawerLayout = findViewById(R.id.explore_drawer);
+        var navigation_view: NavigationView = findViewById(R.id.nav_view);
+
         films_indicator.setBackgroundColor(getColor(R.color.red));
         explore_indicator.setBackgroundColor(getColor(R.color.white));
         mylist_indicator.setBackgroundColor(getColor(R.color.red));
@@ -42,6 +47,12 @@ class ExploreViewModel: AppCompatActivity() {
         mylist_textview.setOnClickListener {
             val intent = Intent(this, MyListViewModel::class.java)
             startActivity(intent)
+        }
+
+        // Set a click listener for the MenuID button
+        menu_imageview.setOnClickListener {
+            // Open the drawer (show the NavigationView)
+            drawer_layout.openDrawer(navigation_view)
         }
 
         var intent: Intent = getIntent()
@@ -78,9 +89,9 @@ class ExploreViewModel: AppCompatActivity() {
             intent.putExtras(bundle)
             startActivity(intent)
         }
-        menu_imageview.setOnClickListener{
+        /*menu_imageview.setOnClickListener{
             val intent = Intent(this, MenuViewModel::class.java)
             startActivity(intent)
-        }
+        }*/
     }
 }

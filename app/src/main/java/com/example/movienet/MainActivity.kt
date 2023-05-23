@@ -6,10 +6,13 @@ import android.os.Bundle
 import android.widget.ImageButton
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.appcompat.app.ActionBarDrawerToggle
+import androidx.drawerlayout.widget.DrawerLayout
+import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity() {
 
-
+    lateinit var toggle : ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -42,6 +45,10 @@ class MainActivity : AppCompatActivity() {
         var explore_indicator:TextView=findViewById(R.id.explore_indicator);
         var mylist_indicator:TextView=findViewById(R.id.mylist_indicator);
 
+        var drawer_layout: DrawerLayout = findViewById(R.id.main_layout);
+        var navigation_view: NavigationView = findViewById(R.id.nav_view);
+
+
         films_indicator.setBackgroundColor(getColor(R.color.white));
         explore_indicator.setBackgroundColor(getColor(R.color.red));
         mylist_indicator.setBackgroundColor(getColor(R.color.red));
@@ -56,10 +63,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        menu_imageview.setOnClickListener{
+        // Set a click listener for the MenuID button
+        menu_imageview.setOnClickListener {
+            // Open the drawer (show the NavigationView)
+            drawer_layout.openDrawer(navigation_view)
+        }
+
+       /* menu_imageview.setOnClickListener{
             val intent = Intent(this, MenuViewModel::class.java)
             startActivity(intent)
-        }
+        }*/
 
         ib1.setOnClickListener{
             val intent = Intent(this, ItemViewModel::class.java)
