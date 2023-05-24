@@ -13,23 +13,23 @@ class MenuViewModel : AppCompatActivity(){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.menu_layout)
 
-        //var logout_view : TextView = findViewById(R.id.SettingsID)
+        var logout_view : TextView = findViewById(R.id.LogOutID)
         var settings_view : TextView = findViewById(R.id.SettingsID)
-        var back_button: ImageButton = findViewById(R.id.back_button)
+        //var back_button: ImageButton = findViewById(R.id.back_button)
 
 
-        /*logout_view.setOnClickListener {
+        logout_view.setOnClickListener {
             val intent = Intent(this, LoginViewModel::class.java)
             startActivity(intent)
-        }*/
+        }
         settings_view.setOnClickListener {
             val intent = Intent(this, SettingsViewModel::class.java)
             startActivity(intent)
         }
 
-        back_button.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
-            startActivity(intent)
-        }
+//        back_button.setOnClickListener {
+//            val intent = Intent(this, MainActivity::class.java)
+//            startActivity(intent)
+//        }
     }
 }

@@ -59,25 +59,37 @@
 <LinearLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content"
+    android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="start">
+    android:gravity="start"
+    android:id = "@+id/menu_drawer">
 
-    <TextView
-        android:id="@+id/SettingsID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:padding="5dp" />
+<View
+android:layout_width="match_parent"
+android:layout_height="0dp"
+android:layout_weight="1" />
 
-    <TextView
-        android:id="@+id/LogOutID"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:padding="5dp" />
+<TextView
+android:id="@+id/SettingsID"
+android:layout_width="match_parent"
+android:layout_height="20dp"
+android:textStyle="bold"
+    android:textSize="30sp"/>
 
-</LinearLayout>
+<TextView
+android:id="@+id/ProfileID"
+android:layout_width="match_parent"
+android:layout_height="20dp"
+android:textStyle="bold" />
+
+<TextView
+android:id="@+id/LogOutID"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:textStyle="bold" />
+
+    </LinearLayout>
+
 
 
     <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
