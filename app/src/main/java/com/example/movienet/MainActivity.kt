@@ -77,27 +77,27 @@ class MainActivity : AppCompatActivity() {
         }
 
 
-// no i tutaj zamiast przechodzic do profile to cofa do poczatku
-            navigation_view.setNavigationItemSelectedListener { menuItem ->
-                when (menuItem.itemId) {
-                    R.id.ProfileID -> { navController.navigate(R.id.profileFragment)
-                        //Toast.makeText(applicationContext, "PROFILE", Toast.LENGTH_SHORT).show()
-                        true
-                    }
-
-                    R.id.SettingsID -> {
-                       // navController.navigate()
-                        true
-                    }
-
-                    R.id.LogOutID -> {
-                      // navController.navigate(R.id.login_layout)
-                        true
-                    }
-
-                    else -> false
-                }
-            }
+//// no i tutaj zamiast przechodzic do profile to cofa do poczatku
+//            navigation_view.setNavigationItemSelectedListener { menuItem ->
+//                when (menuItem.itemId) {
+//                    R.id.ProfileID -> { navController.navigate(R.id.profileFragment)
+//                        //Toast.makeText(applicationContext, "PROFILE", Toast.LENGTH_SHORT).show()
+//                        true
+//                    }
+//
+//                    R.id.SettingsID -> {
+//                       // navController.navigate()
+//                        true
+//                    }
+//
+//                    R.id.LogOutID -> {
+//                      // navController.navigate(R.id.login_layout)
+//                        true
+//                    }
+//
+//                    else -> false
+//                }
+//            }
 
             ib1.setOnClickListener {
                 val intent = Intent(this, ItemViewModel::class.java)
