@@ -25,8 +25,16 @@ class RegisterViewModel : AppCompatActivity() {
         var email: EditText = findViewById(R.id.email_signup)
 
         var signup_button: Button = findViewById(R.id.signup_btn)
+        var login_button: Button = findViewById(R.id.login_signup)
 
         signup_button.setOnClickListener {
+            val intent = Intent(this, LoginViewModel::class.java)
+            startActivity(intent)
+            //.makeText(this, "Register successful", Toast.LENGTH_SHORT).show()
+            validateEmptyForm()
+        }
+
+        login_button.setOnClickListener {
             val intent = Intent(this, LoginViewModel::class.java)
             startActivity(intent)
             //.makeText(this, "Register successful", Toast.LENGTH_SHORT).show()
